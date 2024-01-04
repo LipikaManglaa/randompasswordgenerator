@@ -7,6 +7,7 @@ This app is based on Random generate Password . you can generate any random pass
 git@github.com:LipikaManglaa/randompasswordgenerator.git
 
 [Deployed Netlify] 
+https://random-pasword-generatorr.netlify.app/
 
 Table of Contents
 Description
