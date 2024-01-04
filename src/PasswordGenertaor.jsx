@@ -38,7 +38,8 @@ export default function PasswordGenertaor() {
      //how to copy password
      let copyPassword=()=>{
         navigator.clipboard.writeText(finalPass)
-       toast(finalPass )
+        
+       toast(finalPass,"password has been copy !" )
      }
   return (
    <>
@@ -50,7 +51,7 @@ export default function PasswordGenertaor() {
                 <div className='text-center text-[18px]'>
                     {finalPass}
                 </div>
-                <div className='text-right'><button className='bg-[#1b1452] cursor-pointer rounded-[10px] p-[6px_20px] font-bold text-white mr-2' onClick={copyPassword}>COPY</button></div>
+                <div className='text-right'><button className='bg-[#1b1452] cursor-pointer rounded-[10px] p-[6px_20px] font-bold text-white mr-2 hover:bg-[#482c84]' onClick={copyPassword}>COPY</button></div>
             </div> 
             <div className='grid grid-cols-[70%_auto] py-[10px] my-[10px]  justify-between items-center '>
               <div className='text-white text-[18px]'>Password Length</div>
@@ -73,7 +74,7 @@ export default function PasswordGenertaor() {
               <div className=""><input type='checkbox' className='w-[20px] h-[20px]' checked={symbol} onChange={()=>setSymbol(!symbol)}/></div>
             </div>
             <div>
-                <button className='w-[100%] bg-[#1b1452] cursor-pointer rounded-[5px]  text-white py-[10px] mt-[10px]' onClick={generatePassword}>Generate Password</button>
+                <button className='w-[100%] bg-[#1b1452] cursor-pointer rounded-[5px]  text-white py-[10px] mt-[10px] hover:bg-[#6e4bb8]' onClick={generatePassword}>Generate Password</button>
             </div>
             <ToastContainer autoClose={1500}/>
         </div>
